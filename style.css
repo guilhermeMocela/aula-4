@@ -1,69 +1,80 @@
 body {
     max-width: 100vw;
-    font-family: Arial, sans-serif;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
 }
 
 header {
-    background-color: #FF7F00; /* Laranja (Cor Principal) */
+    background-color: #FF6F00; /* Laranja principal */
     color: #FFFFFF;
     text-align: center;
     margin: 0 auto;
-    padding: 16px;
+    padding: 24px 16px;
 }
 
 main {
-    background-color: #E0F7FA; /* Azul Claro (Cor Secundária) */
+    background-color: #FFFFFF;
     color: #333333;
     margin: 0 auto;
     padding: 16px;
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 article {
     display: flex;
+
+    border: 2px solid #FF6F00; /* Borda em tom Laranja */
+    border-radius: 8px;
     background-color: #FFFFFF;
-    border: 2px solid #FF7F00; /* Borda Laranja */
 
     margin: 16px;
     gap: 16px;
     padding: 16px;
 
-    flex: 1 1 25%;
+    flex: 1 1 280px;
+    max-width: 350px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    border-radius: 8px;
+    justify-content: space-between;
 }
 
 img {
     width: 80px;
     height: 80px;
     object-fit: cover;
-}
-
-h2 {
-    color: #FF7F00; /* Título dos artigos em Laranja */
+    border-radius: 6px;
 }
 
 .artigo-autor {
     font-weight: bold;
-    color: #00838F; /* Detalhe em Azul Escuro para contraste no texto */
+    color: #E65100;
+    margin-bottom: 4px;
 }
 
-.artigo-fonte {
-    font-size: 0.8em;
+.artigo-data {
+    font-size: 0.9em;
+    font-weight: bold;
     color: #666666;
+    margin-top: 0;
 }
 
 button {
-    background-color: #E0F7FA;
-    border: 1px solid #00838F;
+    background-color: #FFF3E0;
+    border: 1px solid #FF6F00;
+    color: #D84315;
+    padding: 6px 12px;
     border-radius: 4px;
-    padding: 4px 8px;
     cursor: pointer;
+    font-weight: bold;
     margin: 4px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #FFE0B2;
 }
